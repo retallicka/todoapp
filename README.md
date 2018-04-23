@@ -1,3 +1,15 @@
+Todo TODO `lol` in no particular order
+
+- Reconsider save and new button, make it easier with autosave
+- Pretty design and CSS, animations
+- Instead of swapping, make it possible to add a task in between another two tasks
+- Be able to add task to beginning and end of list
+- Recheck everything
+- e2e testing
+- Show it to someone else sane
+
+
+
 # Todoapp
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.4.7.
