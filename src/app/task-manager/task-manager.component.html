@@ -19,7 +19,7 @@
 </div>
 <h2>Add a new task</h2>
 <div>
-  <input placeholder="Enter task details" [(ngModel)]="taskName">
+  <input type="text" placeholder="Enter task details" [(ngModel)]="taskName">
 </div>
-<button (click)="createNewTask()">Add new task</button>
-<button (click)="save()">Save</button>
+<button class="new-task-btn" (click)="createNewTask()">Add new task</button>
+<button class="save-btn" (click)="save()">Save</button>

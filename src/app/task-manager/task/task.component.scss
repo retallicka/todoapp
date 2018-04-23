@@ -9,3 +9,8 @@
 div {
   pointer-events: none;
 }
+
+input {
+  pointer-events: all;
+  cursor: default;
+}
