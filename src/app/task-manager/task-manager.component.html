@@ -2,8 +2,24 @@
   TODO app
 </h1>
 <h2>What is next on my list...</h2>
-<ul>
-  <app-task></app-task>
-  <app-task></app-task>
-  <app-task></app-task>
-</ul>
+<div>
+  <ul>
+    <div *ngFor="let item of data">
+      <app-task draggable="true"
+                [attr.data-id]="item.id"
+                [id]="item.id"
+                [task]="item.task"
+                (drop)="onDragDrop($event)"
+                (dragover)="allowDrop($event)"
+                (dragstart)="onDragChange($event)"
+                (onTaskComplete)="onTaskComplete($event)">
+      </app-task>
+    </div>
+  </ul>
+</div>
+<h2>Add a new task</h2>
+<div>
+  <input placeholder="Enter task details" [(ngModel)]="taskName">
+</div>
+<button (click)="createNewTask()">Add new task</button>
+<button (click)="save()">Save</button>

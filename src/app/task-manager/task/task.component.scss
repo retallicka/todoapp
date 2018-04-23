@@ -1,0 +1,11 @@
+:host {
+  background-color: #eeeeee;
+  display: block;
+  padding: 0.5rem;
+  border: 1px solid gray;
+  cursor: move;
+}
+
+div {
+  pointer-events: none;
+}
